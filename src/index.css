@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Heebo', 'Inter', sans-serif;
+  --brand-teal: #4ec3c1;
+  --brand-dark: #333333;
+}
+
+::selection {
+  background-color: var(--brand-teal);
+  color: white;
+}
