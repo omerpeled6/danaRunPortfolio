@@ -21,7 +21,6 @@ Professional fitness and nutrition marketing landing page for **DanaRun (Dana Ni
   - `nutrition.png`: Generated nutrition/lifestyle image.
   - `senior_wellness.png`: Generated active senior group image.
 - `src/`: Source code.
-  - `assets/`: Internal images and icons.
   - `components/`: Modular React components.
     - `Navbar.jsx`: Brand logo and social links (RTL).
     - `Hero.jsx`: Main headline and call to action.
@@ -37,4 +36,9 @@ Professional fitness and nutrition marketing landing page for **DanaRun (Dana Ni
   - `main.jsx`: React entry point.
 - `index.html`: Root HTML template with Hebrew RTL configuration.
 - `package.json`: Project dependencies and scripts.
+- `package-lock.json`: Locked dependency versions.
 - `vite.config.js`: Vite build configuration.
+- `tailwind.config.js`: Tailwind CSS configuration.
+- `postcss.config.js`: PostCSS configuration.
+- `eslint.config.js`: ESLint configuration.
+- `README.md`: Project documentation and structure summary.

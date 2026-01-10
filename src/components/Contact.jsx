@@ -21,17 +21,17 @@ export default function Contact() {
           transition={{ duration: 0.5 }}
           className="text-right space-y-8"
         >
-          <div className="flex items-center justify-end gap-4 text-xl text-neutral-700">
-            <span>{CONTACT.phoneNo}</span>
+          <div className="flex items-center justify-start gap-4 text-xl text-neutral-700">
             <FaPhone className="text-cyan-600" />
+            <span dir="ltr">{CONTACT.phoneNo}</span>
           </div>
-          <div className="flex items-center justify-end gap-4 text-xl text-neutral-700">
-            <a href={`mailto:${CONTACT.email}`} className="hover:text-cyan-600 transition-colors">{CONTACT.email}</a>
+          <div className="flex items-center justify-start gap-4 text-xl text-neutral-700">
             <FaEnvelope className="text-cyan-600" />
+            <a href={`mailto:${CONTACT.email}`} className="hover:text-cyan-600 transition-colors">{CONTACT.email}</a>
           </div>
-          <div className="flex items-center justify-end gap-4 text-xl text-neutral-700">
-            <span>{CONTACT.address}</span>
+          <div className="flex items-center justify-start gap-4 text-xl text-neutral-700">
             <FaMapMarkerAlt className="text-cyan-600" />
+            <span>{CONTACT.address}</span>
           </div>
         </motion.div>
 
