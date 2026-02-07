@@ -12,24 +12,24 @@ export default function Workshops() {
       >
         סדנאות <span className="text-cyan-500">ומסלולים</span>
       </motion.h1>
-      <div className="flex flex-wrap items-center justify-center gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
         {WORKSHOPS.map((workshop, index) => (
           <motion.div
             key={index}
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 50 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="w-full max-w-sm rounded-2xl border border-neutral-200 bg-white p-6 shadow-xl hover:border-cyan-500/50 transition-colors"
+            className="flex flex-col h-full rounded-2xl border border-neutral-200 bg-white p-6 shadow-xl hover:border-cyan-500/50 transition-colors"
           >
             <img
               src={workshop.image}
               alt={workshop.title}
               className="mb-6 h-48 w-full rounded-xl object-cover"
             />
-            <h3 className="mb-2 text-2xl font-bold text-neutral-800">{workshop.title}</h3>
-            <span className="mb-4 block text-cyan-600 font-medium">{workshop.type}</span>
-            <p className="mb-6 text-neutral-600 leading-relaxed text-right">{workshop.description}</p>
-            <div className="flex flex-wrap gap-2 mb-6">
+            <h3 className="mb-2 text-2xl font-bold text-neutral-800 text-right">{workshop.title}</h3>
+            <span className="mb-4 block text-cyan-600 font-medium text-right">{workshop.type}</span>
+            <p className="mb-6 text-neutral-600 leading-relaxed text-right whitespace-pre-line flex-grow">{workshop.description}</p>
+            <div className="flex flex-wrap gap-2 mt-auto">
               {workshop.details.map((detail, i) => (
                 <span
                   key={i}
