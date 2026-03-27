@@ -4,19 +4,19 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram } from 're
 
 export default function Contact() {
   return (
-    <div id="contact" className="py-24">
+    <div id="contact" className="py-14">
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
           viewport={{ once: true }}
-          className="flex flex-col items-center justify-center gap-4 mb-16"
+          className="flex flex-col items-center justify-center gap-3 mb-10"
         >
-          <img src="/logo2.jpg" alt="DanaRun Branding" className="h-24 w-auto rounded-xl shadow-lg mb-4" />
-          <h1 className="text-4xl font-bold text-neutral-800">צרו קשר</h1>
+          <img src="/logo2.jpg" alt="DanaRun Branding" className="rounded-2xl shadow-2xl w-full h-auto object-contain mb-2" />
+          <h1 className="text-4xl font-bold text-neutral-800">צרו <span className="text-cyan-500">קשר</span></h1>
         </motion.div>
-        <div className="flex flex-wrap items-start justify-center gap-12 lg:gap-24">
+        <div className="flex flex-wrap items-start justify-center gap-8 lg:gap-20">
           <motion.div
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: 60 }}

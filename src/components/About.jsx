@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <div id="about" className="border-b border-neutral-200 py-24">
+    <div id="about" className="border-b border-neutral-200 py-14">
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
-        <h1 className="mb-16 text-center text-4xl text-neutral-800">
+        <h1 className="mb-6 text-center text-4xl font-bold text-neutral-800">
           קצת
           <span className="text-cyan-500"> עליי</span>
         </h1>
@@ -18,7 +18,7 @@ export default function About() {
             className="w-full lg:w-1/2"
           >
             <div className="flex justify-center lg:justify-end">
-              <p className="my-2 max-w-xl py-6 font-light tracking-tight text-neutral-600 text-base lg:text-lg leading-relaxed text-right">
+              <p className="my-4 text-lg sm:text-xl tracking-tight text-neutral-400">
                 {ABOUT_TEXT.split('\n').map((line, i) => (
                   <span key={i}>
                     {line}

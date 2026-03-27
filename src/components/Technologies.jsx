@@ -3,14 +3,14 @@ import { motion } from 'framer-motion'
 
 export default function Workshops() {
   return (
-    <div id="workshops" className="border-b border-neutral-200 py-24">
+    <div id="workshops" className="border-b border-neutral-200 py-14">
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
         <motion.h1
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -40 }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
           viewport={{ once: true }}
-          className="mb-16 text-center text-4xl font-bold text-neutral-800"
+          className="mb-10 text-center text-4xl font-bold text-neutral-800"
         >
           סדנאות <span className="text-cyan-500">ומסלולים</span>
         </motion.h1>
