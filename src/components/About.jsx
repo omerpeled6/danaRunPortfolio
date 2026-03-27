@@ -16,7 +16,7 @@ export default function About() {
           className="w-full lg:w-1/2 lg:p-8"
         >
           <div className="flex items-center justify-center">
-            <img className="rounded-2xl h-[500px] w-auto shadow-2xl object-cover" src="/photo.jpg" alt="דנה נסים" />
+            <img className="rounded-2xl h-[500px] w-auto shadow-2xl object-cover" src="/me2.jpeg" alt="דנה נסים" />
           </div>
         </motion.div>
         <motion.div

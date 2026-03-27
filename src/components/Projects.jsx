@@ -21,7 +21,7 @@ export default function Projects() {
           className="w-full lg:w-2/5"
         >
           <img
-            src="/photo.jpg"
+            src="/me.jpeg"
             alt="Personal Training"
             className="rounded-3xl shadow-2xl object-cover w-full h-[500px]"
           />

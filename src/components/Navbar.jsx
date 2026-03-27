@@ -3,9 +3,9 @@ import { CONTACT } from '../constants'
 
 export default function Navbar() {
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
+    <nav className="flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
-        <img className="mx-2 h-16 w-auto" src="/logo1.jpg" alt="DanaRun Logo" />
+        <img className="mx-2 h-16 w-auto" src="/logo_white.jpg" alt="DanaRun Logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-6 text-2xl text-neutral-700">
         <a
