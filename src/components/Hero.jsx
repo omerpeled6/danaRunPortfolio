@@ -37,7 +37,7 @@ export default function Hero() {
                 variants={fadeUp(0.4)}
                 initial="hidden"
                 animate="visible"
-                className="my-2 max-w-xl py-6 font-light tracking-tighter text-neutral-600 text-base lg:text-xl leading-relaxed"
+                className="my-2 max-w-xl py-6 font-light tracking-tight text-neutral-600 text-base lg:text-lg leading-relaxed text-right whitespace-pre-line"
               >
                 {HERO_CONTENT.subtitle}
               </motion.p>

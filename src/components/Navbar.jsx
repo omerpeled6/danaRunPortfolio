@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 sm:h-20">
 
           {/* Social icons — left in RTL layout */}
-          <div className="flex items-center gap-5 text-lg text-gray-500">
+          <div className="flex items-center gap-5 text-2xl text-gray-500">
             <a href={`https://wa.me/${CONTACT.phoneNo.replace(/[-+ ]/g, '')}`}
               target="_blank" rel="noopener noreferrer"
               className="hover:text-[#4ec3c1] transition-colors duration-200" aria-label="WhatsApp">
