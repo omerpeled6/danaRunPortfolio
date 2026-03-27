@@ -1,16 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: 'Heebo', 'Inter', sans-serif;
-  --brand-teal: #4ec3c1;
-  --brand-dark: #333333;
+  font-family: 'Heebo', sans-serif;
+  --teal: #4ec3c1;
+  --teal-dark: #38b2b0;
+  --teal-light: #e8f9f9;
+  --bg: #f8fafa;
+  --bg-dark: #111827;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background-color: var(--brand-teal);
-  color: white;
+  background-color: #4ec3c140;
+  color: #111827;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f5; }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 10px; }
+
+img {
+  image-rendering: -webkit-optimize-contrast;
 }
